@@ -83,3 +83,34 @@ main {
     list-style-type: none;
     padding-inline-start: 1em;
 }
+
+/* Start of footer style */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 3em;
+    min-height: 3em;
+    background-color: #28536B;
+    text-align: right;
+}
+
+footer a {
+    color: #F6F0ED;
+    margin-right: 10%;
+    padding: 4px;
+}
+
+footer a:hover {
+    color: #28536B;
+    background-color: #F6F0ED;
+    border-radius: 4px;
+}
+
+footer a:focus {
+    color: #28536B;
+    background-color: #F6F0ED;
+    border-radius: 4px;
+}
