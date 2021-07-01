@@ -65,6 +65,10 @@ main {
     margin-bottom: 0.8em;
 }
 
+.intro-subheadings {
+    margin-bottom: 0.8em;
+}
+
 #blog-box {
     width: 32%;
     border: 1px solid #7EA8BE;
