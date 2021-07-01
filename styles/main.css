@@ -1,0 +1,48 @@
+/*
+Colour Palette
+#B29100 - Dark Goldenrod
+#28536B - Blue Sapphire
+#7EA8BE - Pewter Blue
+#F6F0ED - Isabelline
+#260C1A - Dark Purple
+*/
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: #28536B;
+    font-family: 'Inter', sans-serif;
+    padding: 8px;
+}
+
+.clickable-logo-text {
+    margin-left: 16px;
+}
+
+.clickable-logo-text a {
+    text-decoration: none;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: 50%;
+    margin-left: 16px;
+    color: #F6F0ED;
+}
+
+h1 #main-title-name {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+h1 #main-title-role {
+    padding-left: 16%;
+    text-transform: uppercase;
+    font-size: 0.64em;
+}
