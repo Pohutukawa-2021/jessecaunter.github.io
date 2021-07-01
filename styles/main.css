@@ -85,6 +85,14 @@ main {
     padding-inline-start: 1em;
 }
 
+.sprint-list a {
+    color: #28536B;
+}
+
+.sprint-list a:hover {
+    color: #7EA8BE;
+}
+
 /* Start of footer style */
 
 footer {
