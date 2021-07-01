@@ -53,7 +53,8 @@ h1 #main-title-role {
 /* Start of main style */
 
 main {
-    margin: 64px 40px;
+    padding: 64px 40px;
+    background-color: #F6F0ED;
 }
 
 .intro-text {
