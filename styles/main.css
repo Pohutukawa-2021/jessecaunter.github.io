@@ -13,7 +13,10 @@ Colour Palette
 
 html {
     font-family: 'Nunito', sans-serif;
+    color: #260C1A;
 }
+
+/* Start of header style */
 
 header {
     background-color: #28536B;
@@ -45,4 +48,38 @@ h1 #main-title-role {
     padding-left: 16%;
     text-transform: uppercase;
     font-size: 0.64em;
+}
+
+/* Start of main style */
+
+main {
+    margin: 64px 40px;
+}
+
+.intro-text {
+    margin-bottom: 4em;
+}
+
+.intro-heading {
+    margin-bottom: 0.8em;
+}
+
+#blog-box {
+    width: 32%;
+    border: 1px solid #7EA8BE;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #7EA8BE;
+    margin-left: 1em;
+    padding: 22px 16px;
+}
+
+.box-heading {
+    padding-inline-start: 1.3em;
+    margin-bottom: 0.8em;
+}
+
+.sprint-list {
+    line-height: 2;
+    list-style-type: none;
+    padding-inline-start: 1em;
 }
