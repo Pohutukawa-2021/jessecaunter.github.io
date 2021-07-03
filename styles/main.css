@@ -113,6 +113,19 @@ figure figcaption{
     color: #7EA8BE;
 }
 
+.example-images {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;  
+}
+
+.example-images img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1.6em;
+}
+
 /* Start of footer style */
 
 footer {
