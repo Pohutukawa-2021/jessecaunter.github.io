@@ -23,25 +23,28 @@
         </div>
     </header>
     <main>
-        <div class="intro-text">
+        <!-- <div class="intro-text">
             <h2 class="intro-heading">Display: Inline vs. Inline-Block</h2>
-            <!-- <div class="intro-subheadings">
+            <div class="intro-subheadings">
                 <h3>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running
                         over roots makes the speediest runner.</em> (Optional SUB title) </h3>
                 <h4>10 November 2010</h4>
-            </div> -->
+            </div>
+        </div> -->
+        <div class="blog-post">
+            <h2>Display: Inline vs. Inline-Block</h2>
             <p>
                 Positioning elements correctly on a page is one of the biggest challenges in CSS. There are so many
                 selectors, properties and values, it can all be quite overwhelming sometimes.
             </p>
             <p>
-                Let's take a look at one common question - what's the difference between 'display: inline' and 'display:
-                inline-block'? Both specify how elements should fit in relation to the surrounding content - but which
-                one should you use, and when?
+                Let's take a look at one common question - what's the difference between <em>display: inline</em> and
+                <em>display: inline-block</em>? Both specify how elements should fit in relation to the surrounding
+                content - but which one should you use, and when?
             </p>
             <p>
                 In order to answer this question, we should take a step back and make sure we understand the difference
-                between 'inline' and 'block-level elements'. Here's a quick refresher:
+                between <em>inline</em> and <em>block-level</em> elements. Here's a quick refresher:
             </p>
             <figure>
                 <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
@@ -50,8 +53,8 @@
                 <figcaption>- <cite>MDN Web Docs</cite></figcaption>
             </figure>
             <p>
-                An example of this would be when we use the 'strong' tag. This fits within the flow of the text and
-                doesn't cause the text within the tag to sit by itself on a new line.
+                An example of this would be when we use the &lt<em>strong</em>&gt tag. This fits within the flow of the
+                text and doesn't cause the text within the tag to sit by itself on a new line.
             </p>
             <figure>
                 <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">
@@ -61,8 +64,8 @@
                 <figcaption>- <cite>MDN Web Docs</cite></figcaption>
             </figure>
             <p>
-                One example of a block-level element is the 'p' tag. This causes the text within the tags to begin on a
-                new line. Whatever follows the paragraph will also begin on it's own new line.
+                One example of a block-level element is the &lt<em>p</em>&gt tag. This causes the text within the tags
+                to begin on a new line. Whatever follows the paragraph will also begin on its own new line.
             </p>
             <p>
                 Generally speaking, block-level elements may contain inline elements and other block-level elements,
@@ -73,18 +76,18 @@
                 inline and inline-block. The names give us our first clue.
             </p>
             <p>
-                'Display: inline' is essentially what we covered earlier in the article. Content will stay on the same
-                line if possible, only wrapping onto a new line if there's not enough space. We can specify margins and
-                padding for these elements, however only the left and right values will be respected - margins and
+                <em>Display: inline</em> is essentially what we covered earlier in the article. Content will stay on the
+                same line if possible, only wrapping onto a new line if there's not enough space. We can specify margins
+                and padding for these elements, however only the left and right values will be respected - margins and
                 padding on the top and bottom will overlap with other content.
             </p>
             <p>
-                'Display: inline-block', as the name suggests, finds a happy medium between the 'inline' and 'block'
-                characteristics. In some way it gives us the best of both worlds. 'Inline-block' allows us to specify
-                the height and width of elements, which we couldn't do with 'inline'. Margins and padding on the top and
-                bottom of elements are also respected, unlike what we see with the 'inline' value. The key difference
-                between 'block' and 'inline-block' is that the latter doesn't cause the element to appear on a new line.
-                Inline-block elements can sit beside one another as friends and equals.
+                <em>Display: inline-block</em>, as the name suggests, finds a happy medium between the inline and
+                block-level characteristics. In some way it gives us the best of both worlds. Inline-block allows us to
+                specify the height and width of elements, which we couldn't do with inline. Margins and padding on the
+                top and bottom of elements are also respected, unlike what we see with the inline value. The key
+                difference between block and inline-block is that the latter doesn't cause the element to appear on a
+                new line. Inline-block elements can sit beside one another as friends and equals.
             </p>
         </div>
     </main>
