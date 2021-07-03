@@ -29,23 +29,63 @@
                 <h3>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running
                         over roots makes the speediest runner.</em> (Optional SUB title) </h3>
                 <h4>10 November 2010</h4>
-            </div>
+            </div> -->
             <p>
-                Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning
-                his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te
-                Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
+                Positioning elements correctly on a page is one of the biggest challenges in CSS. There are so many
+                selectors, properties and values, it can all be quite overwhelming sometimes.
             </p>
             <p>
-                Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te
-                Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind,
-                completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it
-                takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara
-                pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
+                Let's take a look at one common question - what's the difference between 'display: inline' and 'display:
+                inline-block'? Both specify how elements should fit in relation to the surrounding content - but which
+                one should you use, and when?
             </p>
             <p>
-                While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was
-                immediately recognised.
-            </p> -->
+                In order to answer this question, we should take a step back and make sure we understand the difference
+                between 'inline' and 'block-level elements'. Here's a quick refresher:
+            </p>
+            <figure>
+                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
+                    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+                </blockquote>
+                <figcaption>- <cite>MDN Web Docs</cite></figcaption>
+            </figure>
+            <p>
+                An example of this would be when we use the 'strong' tag. This fits within the flow of the text and
+                doesn't cause the text within the tag to sit by itself on a new line.
+            </p>
+            <figure>
+                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">
+                    <p>A block-level element always starts on a new line and takes up the full width available
+                        (stretches out to the left and right as far as it can).</p>
+                </blockquote>
+                <figcaption>- <cite>MDN Web Docs</cite></figcaption>
+            </figure>
+            <p>
+                One example of a block-level element is the 'p' tag. This causes the text within the tags to begin on a
+                new line. Whatever follows the paragraph will also begin on it's own new line.
+            </p>
+            <p>
+                Generally speaking, block-level elements may contain inline elements and other block-level elements,
+                however inline elements can't contain block-level elements.
+            </p>
+            <p>
+                Now that we've covered the difference between inline and block, lets look at the difference between
+                inline and inline-block. The names give us our first clue.
+            </p>
+            <p>
+                'Display: inline' is essentially what we covered earlier in the article. Content will stay on the same
+                line if possible, only wrapping onto a new line if there's not enough space. We can specify margins and
+                padding for these elements, however only the left and right values will be respected - margins and
+                padding on the top and bottom will overlap with other content.
+            </p>
+            <p>
+                'Display: inline-block', as the name suggests, finds a happy medium between the 'inline' and 'block'
+                characteristics. In some way it gives us the best of both worlds. 'Inline-block' allows us to specify
+                the height and width of elements, which we couldn't do with 'inline'. Margins and padding on the top and
+                bottom of elements are also respected, unlike what we see with the 'inline' value. The key difference
+                between 'block' and 'inline-block' is that the latter doesn't cause the element to appear on a new line.
+                Inline-block elements can sit beside one another as friends and equals.
+            </p>
         </div>
     </main>
     <footer>
