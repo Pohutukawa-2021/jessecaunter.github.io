@@ -65,6 +65,12 @@ h2 {
     margin-bottom: 1.6em;
 }
 
+h3 {
+    margin-top: 1.6em;
+    margin-bottom: 1.3em;
+    text-decoration: underline;
+}
+
 .intro-subheadings {
     margin-bottom: 0.8em;
 }
@@ -105,8 +111,13 @@ figure figcaption{
     padding-inline-start: 1em;
 }
 
+.sprint-list li {
+    margin-bottom: 0.8em;
+}
+
 .sprint-list a {
     color: #28536B;
+    margin-left: 2em;
 }
 
 .sprint-list a:hover {
@@ -123,6 +134,10 @@ figure figcaption{
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
+    margin-bottom: 1.6em;
+}
+
+.q-and-a-block {
     margin-bottom: 1.6em;
 }
 
