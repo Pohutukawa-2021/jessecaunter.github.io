@@ -33,77 +33,84 @@
         </div> -->
         <div class="blog-post">
             <h2>JavaScript Fundamentals</h2>
-            <!-- <p>
-                Positioning elements correctly on a page is one of the biggest challenges in CSS. There are so many
-                selectors, properties and values, it can all be quite overwhelming sometimes.
+            <h3>Differences between HTML and CSS</h3>
+            <p>CSS is to HTML as clothes are to a person.</p>
+            <p>Let's examine the relationship between clothing and people. Clothes are designed to be worn by people,
+                and generally have the shape of a person in mind when they're made. For example, a t-shirt will have a
+                hole for the head to fit through, one for each arm, and the main opening where our body fits. Besides
+                keeping us warm and protecting our modesty, clothes allow us to express ourselves through our choices of
+                colour, style, fit, and other such properties.</p>
+            <p>Now how do HTML and CSS fit this analogy? Well, HTML is the basic structure of a page - the person before
+                they get dressed. HTML tells us things such as the page's heaing, how many paragraphs of text are in
+                each section, and the content of that text. It's all structure with minimal style. Then we have CSS
+                which adds layers of style over the top of the HTML. It's the clothing that's worn by the person -
+                perhaps a bright red jacket and green shoes. Similarly, if we wanted to we could use CSS to make the
+                main heading element of our page bright red, and then give the last paragraph a green background. We can
+                use CSS to change the height or width of an element, or even to make pictures - the possibilities are
+                endless. It's all about conveying a particular style or identity... just watch the red jacket and green
+                shoes combo.
             </p>
+            <h3>Control Flow and Loops</h3>
+            <p>Control flow is the order in which our code will execute from start to finish, from the first line to the
+                last. This is usually not a linear journey and there are many factors that affect a program/script's
+                path through the code. These include structures such as if/else statements, functions, and loops.</p>
+            <p>Loops are a great example of a structure that affects control flow. Let's say we want to run a particular
+                part of our code multiple times - we could copy and paste that code right? Well what if we want it to
+                run 40,000 times? Having the same block of code repeated this many times seems absurd, plus it violates
+                the "DRY rule" (Don't Repeat Yourself). This is where loops are our friend. We can write a loop which
+                executes a particular section of code 'n' amount of times. And the great part is, we don't even need to
+                know how many times that is up front - it could depend on some dynamic value such as user input.</p>
+            <p>An example of control flow and loops in everyday life might be walking to work - let's say we are writing
+                code for this. We have a starting point of home (the first line of code), and an end-point of work (the
+                last line of code). We may have an if/else statement in there - if it's raining, take the more sheltered
+                route, otherwise (else) take the most efficient route. If it's raining, we may also need to grab a
+                raincoat and/or umbrella. If it's sunny we may need to grab a hat. Then we need to program our steps -
+                left, right, left (or vice versa). But how many steps is it going to take? Well that depends on factors
+                like which route we walk and whether there are any obstacles in the way. This is where a loop would be
+                ideal, telling us to keep taking steps until we're at work. So depending on various factors, our journey
+                (control flow) has the potential to look very different.</p>
+            <h3>What is the DOM?</h3>
+            <p>The Document Object Model (or DOM for short), is an interface that allows programs to interact with the
+                structure, content and style of a page. The way it does this is by converting the HTML document into a
+                tree of nodes or objects which can then be accessed via the programming/scripting language.</p>
+            <p>We can interact with the DOM through the console found inside Chrome DevTools, or via code in our
+                program. One example could be a line of script in your JS file which runs when a page loads, making a
+                welcome message alert pop up in the browser.</p>
+            <h3>Accessing Data from Arrays vs. Objects</h3>
+            <p>The way we access data from arrays and objects is quite different. An array is a collection of data
+                elements, with each element accessed using an index which corresponds to its position in the array. The
+                indexes begin at 0 and increase in sequential order. Let's say we have an array of strings representing
+                a friend group:</p>
+            <p><code>var friends = ["Jamal", "Will", "Mike"]</code></p>
+            <p>If we want to access the first name in the array, we would use the array name immediately followed by the
+                first index number in square brackets. Like so:</p>
+            <p><code>friends[0] // "Jamal"</code></p>
+            <p>If we wanted to access the last name in the array, we would use:</p>
+            <p><code>friends[2] // "Mike"</code></p>
+            <p>Or because the array starts at 0, the last element will always be <code>array.length - 1</code></p>
+            <p>Objects on the other hand, are made up of name:value pairs called properties. Instead of using an index
+                number to access data, you use the name of the property. This means that you don't need to know the
+                property's position in the object. Here's an example of an object:</p>
             <p>
-                Let's take a look at one common question - what's the difference between <em>display: inline</em> and
-                <em>display: inline-block</em>? Both specify how elements should fit in relation to the surrounding
-                content - but which one should you use, and when?
+            <pre>
+            <code>
+            var person = {
+                'firstName': 'Jesse',
+                'lastName': 'Caunter',
+                'age': 30
+            }</code>
+            </pre>
             </p>
-            <p>
-                In order to answer this question, we should take a step back and make sure we understand the difference
-                between <em>inline</em> and <em>block-level</em> elements. Here's a quick refresher:
-            </p>
-            <figure>
-                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
-                    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
-                </blockquote>
-                <figcaption>- <cite>MDN Web Docs</cite></figcaption>
-            </figure>
-            <p>
-                An example of this would be when we use the &lt<em>strong</em>&gt tag. This fits within the flow of the
-                text and doesn't cause the text within the tag to sit by itself on a new line.
-            </p>
-            <figure>
-                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">
-                    <p>A block-level element always starts on a new line and takes up the full width available
-                        (stretches out to the left and right as far as it can).</p>
-                </blockquote>
-                <figcaption>- <cite>MDN Web Docs</cite></figcaption>
-            </figure>
-            <p>
-                One example of a block-level element is the &lt<em>p</em>&gt tag. This causes the text within the tags
-                to begin on a new line. Whatever follows the paragraph will also begin on its own new line.
-            </p>
-            <p>
-                Generally speaking, block-level elements may contain inline elements and other block-level elements,
-                however inline elements can't contain block-level elements.
-            </p>
-            <p>
-                Now that we've covered the difference between inline and block, lets look at the difference between
-                inline and inline-block. The names give us our first clue.
-            </p>
-            <p>
-                <em>Display: inline</em> is essentially what we covered earlier in the article. Content will stay on the
-                same line if possible, only wrapping onto a new line if there's not enough space. We can specify margins
-                and padding for these elements, however only the left and right values will be respected - margins and
-                padding on the top and bottom will overlap with other content. Here's an example:
-            </p>
-            <div class="example-images">
-                <img src="../images/inline-css.png"
-                    alt="Screenshot showing CSS code - span elements are being styled with display: inline"
-                    width="400px" height="auto">
-                <img src="../images/inline-example.png"
-                    alt="How two span elements with display: inline look on the page" width="400px" height="auto">
-            </div>
-            <p>
-                <em>Display: inline-block</em>, as the name suggests, finds a happy medium between the inline and
-                block-level characteristics. In some way it gives us the best of both worlds. Inline-block allows us to
-                specify the height and width of elements, which we can't do with inline. Margins and padding on the
-                top and bottom of elements are also respected, unlike what we see with the inline value. The key
-                difference between block and inline-block is that the latter doesn't cause the element to appear on a
-                new line. Inline-block elements can sit beside one another as friends and equals. Here's an example of
-                inline-block in action:
-            </p>
-            <div class="example-images">
-                <img src="../images/inline-block-css.png"
-                    alt="Screenshot showing CSS code - a span element is being styled with display: inline-block"
-                    width="400px" height="auto">
-                <img src="../images/inline-block-example.png"
-                    alt="How two span elements with display: inline-block look on the page" width="400px" height="auto">
-            </div> -->
+            <p>If you wanted to access the lastName property value in the above example, you could use either:</p>
+            <p><code>person.lastName; // dot notation</code></p>
+            <p>or</p>
+            <p><code>person["lastName"]; // bracket notation</code></p>
+            <h3>Functions and Why They're Useful</h3>
+            <p>Functions are typically small reusable pieces of code that perform a specific task. They are useful
+                because we can call them whenever we need to, without the need for duplicating the code. They make
+                testing and debugging easier as code is separated into smaller more manageable chunks. Functions also
+                make code easier to understand, especially if we didn't write it ourselves. We should be able to look at
+                a funtion and quickly ascertain what it does, without needing to know exactly how it works.</p>
         </div>
     </main>
     <footer>
