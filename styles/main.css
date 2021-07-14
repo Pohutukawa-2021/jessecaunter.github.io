@@ -141,6 +141,10 @@ figure figcaption{
     margin-bottom: 1.6em;
 }
 
+iframe {
+    margin: 1.6em;
+}
+
 /* Start of footer style */
 
 footer {
