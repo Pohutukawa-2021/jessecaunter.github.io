@@ -33,77 +33,147 @@
         </div> -->
         <div class="blog-post">
             <h2>Problem Solving</h2>
-            <!-- <p>
-                Positioning elements correctly on a page is one of the biggest challenges in CSS. There are so many
-                selectors, properties and values, it can all be quite overwhelming sometimes.
+            <h3>Simple Solutions</h3>
+            <p>
+                Last week I ran into a simple problem, although I didn't know it at the time. We were learning about the
+                DOM, and the teaching material was expaining how to select specific HTML elements on a page. There were
+                screenshots showing the DevTools console tab with lines of input/output, however when I went into the
+                DevTools console tab in my browser it was empty. Hmmm....
             </p>
             <p>
-                Let's take a look at one common question - what's the difference between <em>display: inline</em> and
-                <em>display: inline-block</em>? Both specify how elements should fit in relation to the surrounding
-                content - but which one should you use, and when?
+                So why was nothing showing up in my console tab? I tried typing some JavaScript into my text editor,
+                saving, and then refreshing my browser - but this wasn't doing what I was after. Why couldn't I see the
+                Document Object Model for my page? Was there something wrong with my settings? I started to panic,
+                frantically searching Google for answers. How could I work my way through this module when I seemingly
+                can't even get to the starting line?
             </p>
             <p>
-                In order to answer this question, we should take a step back and make sure we understand the difference
-                between <em>inline</em> and <em>block-level</em> elements. Here's a quick refresher:
-            </p>
-            <figure>
-                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
-                    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
-                </blockquote>
-                <figcaption>- <cite>MDN Web Docs</cite></figcaption>
-            </figure>
-            <p>
-                An example of this would be when we use the &lt<em>strong</em>&gt tag. This fits within the flow of the
-                text and doesn't cause the text within the tag to sit by itself on a new line.
-            </p>
-            <figure>
-                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">
-                    <p>A block-level element always starts on a new line and takes up the full width available
-                        (stretches out to the left and right as far as it can).</p>
-                </blockquote>
-                <figcaption>- <cite>MDN Web Docs</cite></figcaption>
-            </figure>
-            <p>
-                One example of a block-level element is the &lt<em>p</em>&gt tag. This causes the text within the tags
-                to begin on a new line. Whatever follows the paragraph will also begin on its own new line.
+                I took a break.
             </p>
             <p>
-                Generally speaking, block-level elements may contain inline elements and other block-level elements,
-                however inline elements can't contain block-level elements.
+                When I came back to the problem about an hour later, I had left the anxiety behind and was ready to
+                tackle the problem step-by-step. I went back on Google and found a video tutorial where I could see
+                someone using the DevTools console in real time. They were typing into it. Simple as that. All that
+                panic and anxiety I had felt earlier suddenly gave way to a weird mixture of relief and amusement.
             </p>
             <p>
-                Now that we've covered the difference between inline and block, lets look at the difference between
-                inline and inline-block. The names give us our first clue.
+                The biggest takeaway from this ordeal was to do with mindset. Sometimes we're just not in the right
+                headspace to solve a problem for whatever reason, no matter how simple the issue. A quick break away
+                from the problem can help ease feelings of stress and overwhelm, leading to a greater sense of clarity
+                when we come back to it.
+            </p>
+            <h3>Elegant Solutions</h3>
+            <p>
+                Sometimes we face a problem where it's unlikely that we'll stumble on the answer without a proper plan.
+                Taking a break can certainly help, but we need some other techniques in our problem-solving arsenal.
             </p>
             <p>
-                <em>Display: inline</em> is essentially what we covered earlier in the article. Content will stay on the
-                same line if possible, only wrapping onto a new line if there's not enough space. We can specify margins
-                and padding for these elements, however only the left and right values will be respected - margins and
-                padding on the top and bottom will overlap with other content. Here's an example:
+                I found myself in this situation today while working on some JavaScript kata. I hit a wall. The focus
+                was built-in methods, and I just couldn't get my head around how to take a sentence string and remove
+                every instance of a particular word. I jumped on Google and started searching for answers. But every
+                time I found some information that could be useful, my mind couldn't process how it would help me solve
+                the problem as a whole. I wrote some code, ran it, saw the error messages and then deleted my code. This
+                carried on for a solid 30 minutes at least, and I was getting frantic.
             </p>
-            <div class="example-images">
-                <img src="../images/inline-css.png"
-                    alt="Screenshot showing CSS code - span elements are being styled with display: inline"
-                    width="400px" height="auto">
-                <img src="../images/inline-example.png"
-                    alt="How two span elements with display: inline look on the page" width="400px" height="auto">
-            </div>
             <p>
-                <em>Display: inline-block</em>, as the name suggests, finds a happy medium between the inline and
-                block-level characteristics. In some way it gives us the best of both worlds. Inline-block allows us to
-                specify the height and width of elements, which we can't do with inline. Margins and padding on the
-                top and bottom of elements are also respected, unlike what we see with the inline value. The key
-                difference between block and inline-block is that the latter doesn't cause the element to appear on a
-                new line. Inline-block elements can sit beside one another as friends and equals. Here's an example of
-                inline-block in action:
+                Did I figure out a solution?
+                <br>Yes.
+                <br>So how did I do it?
             </p>
-            <div class="example-images">
-                <img src="../images/inline-block-css.png"
-                    alt="Screenshot showing CSS code - a span element is being styled with display: inline-block"
-                    width="400px" height="auto">
-                <img src="../images/inline-block-example.png"
-                    alt="How two span elements with display: inline-block look on the page" width="400px" height="auto">
-            </div> -->
+            <p>
+                First of all I took a moment to reflect on how I was approaching the problem. I was looking at it as a
+                whole instead of breaking it down into smaller pieces. Well there's a good place to start. So I broke
+                the solution down into three steps of pseudocode:
+            </p>
+            <ol>
+                <li>Split the sentence string into an array of single words</li>
+                <li>Filter out every instance of the specified word</li>
+                <li>Return the concatenated string made up of the remaining words in the array</li>
+            </ol>
+            <p>
+                I already knew how to code the first step, so I wrote the statement and console.logged it to check I was
+                on the right track. Now I was getting somewhere, and felt the confidence start building. The second step
+                required me to learn how the filter method is implemented, so I Googled it with an exact idea of how I
+                needed it to fit my solution. I wrote the statement and tested it, but got an error message. After a
+                couple more attempts I had solved the second step (sort of). I had filtered out each instance of the
+                specified word, but this is what I was left with - I actually wanted the other words. So I figured using
+                the 'not' operator was the logical fix. Tried to implement this a couple of times and got it to work.
+                Great!
+            </p>
+            <p>
+                But hang on a moment. There were still instances of the word that hadn't been filtered due to
+                capitalisation of different letters. So I fitted the toLowerCase method as part of the search criteria.
+                I had slayed the beast! Now I just had to write the last step which I knew would be easy - a return
+                statement which used the join method to concatenate the remaining words in the array. And just like
+                that, a problem which had initially seemed so difficult had now been solved.
+            </p>
+            <p>
+                I felt a great sense of satisfaction having put some of the problem-solving techniques into practice and
+                overcoming a real challenge. The real key was breaking it into smaller pieces through pseudocode,
+                solving one step at a time, and letting the confidence build with each small victory.
+            </p>
+            <h3>Problem-Solving Toolkit</h3>
+            <ul>
+                <li><strong>Pseudocode</strong></li>
+                <p>
+                    I've been practising the pseudocode technique and now feel very confident using it. It's just a
+                    matter of remembering to use it, as it's easy to jump in and start coding without taking a moment to
+                    formulate your plan of attack.
+                </p>
+                <li><strong>Trying something</strong></li>
+                <p>
+                    This is usually my go-to, but it can be inefficient without planning out the solution first. I've
+                    found that it's easy to start coding and then realise that your solution is not meeting
+                    requirements. I'm confident with the technique itself, just need to refine how I use it in
+                    conjunction with other techniques.
+                </p>
+                <li><strong>Rubber ducky method</strong></li>
+                <p>
+                    I haven't tried this problem-solving method yet. I don't think I'd feel confident using it, but it's
+                    important to note that we improve at things through repetition. Perhaps I'll try the rubber ducky
+                    method next time and see how it goes.
+                </p>
+                <li><strong>Reading error messages</strong></li>
+                <p>
+                    I'm relatively confident at reading error messages, and have been using this technique in
+                    conjunction with 'trying something' as a feedback loop of sorts. I wouldn't say I understand every
+                    component of the error messages, but I'm generally able to filter out the information I need in
+                    order to make the required adjustments to my code.
+                </p>
+                <li><strong>Console.logging</strong></li>
+                <p>
+                    I use the console.logging technique sometimes, to check what my code is actually doing and make sure
+                    I'm on the right track. For example, console.logging some code to check the output before putting it
+                    in a function return statement. I feel pretty confident with this technique.
+                </p>
+                <li><strong>Googling</strong></li>
+                <p>
+                    Another one of my go-to techniques, not just for coding but life in general. I'm quite confident
+                    Googling solutions, however sometimes getting the wording right can be tricky - especially when you
+                    don't completely understand the information you're trying to find.
+                </p>
+                <li><strong>Asking your peers for help</strong></li>
+                <p>
+                    This would be one of my weaker areas, and it's a technique that I would generally only use once I've
+                    built up a good relationship with someone to the point where I feel confident asking them for help.
+                    It depends on the problem though - if it's something where I'd struggle to find the answer on
+                    Google, then I'd definitely consider asking peers for help.
+                </p>
+                <li><strong>Asking coaches for help</strong></li>
+                <p>
+                    Similar to asking peers for help, I tend to seek the solution myself before asking a coach. In the
+                    right situation I would use this method, but it depends on the nature of the problem. My confidence
+                    using this technique would be at an average level.
+                </p>
+                <li><strong>Improving your process with reflection</strong></li>
+                <p>
+                    I'm not entirely confident using reflection to improve my process, and often don't even consciously
+                    consider using this technique. I find that when I do use it, it's generally because I've hit a wall,
+                    taken some time away from the problem, and my mind is drifting back to the problem in a calmer
+                    state. At this point I do find reflection beneficial, however I'd love to be able to tap into it at
+                    will.
+                </p>
+            </ul>
         </div>
     </main>
     <footer>
