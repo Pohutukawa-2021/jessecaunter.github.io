@@ -145,6 +145,10 @@ iframe {
     margin: 1.6em;
 }
 
+ol {
+    margin-bottom: 1em;
+}
+
 /* Start of footer style */
 
 footer {
