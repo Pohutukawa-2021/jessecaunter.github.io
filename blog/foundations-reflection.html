@@ -33,77 +33,77 @@
         </div> -->
         <div class="blog-post">
             <h2>Foundations Reflection</h2>
-            <!-- <p>
-                Positioning elements correctly on a page is one of the biggest challenges in CSS. There are so many
-                selectors, properties and values, it can all be quite overwhelming sometimes.
-            </p>
+            <h3>Three new things I've learned about myself and my ego as a result of the core learning</h3>
+            <ol>
+                <li>
+                    <p>
+                        I can overcome any challenge if I break it down into small steps/goals. This is partly growth
+                        mindset (embracing the challenge), and partly to do with problem-solving (breaking things down
+                        into
+                        actionable steps).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        I'm an agreeable person, but sometimes that comes at the cost of assertiveness and
+                        self-confidence.
+                        I reflected on this as part of the strengths and limitations assessment. While the former
+                        quality is
+                        important to have, so are the latter two, and they are things I'll need to work on in order to
+                        reach
+                        the goals I've set for myself.
+                    </p>
+                </li>
+                <li>
+                    <P>
+                        That I'm quite good at implementing small habits, sticking to them, and then building off them.
+                        I'd
+                        even go so far as to say I'm more habit-driven than goal-driven. Having a routine keeps me on
+                        the
+                        right track, and I know that if I stick to it I'll see incremental improvements every day. And
+                        these
+                        small improvements compound over time.
+                    </P>
+                </li>
+            </ol>
+            <h3>The role of values, empathy and self-awareness in learning and programming</h3>
             <p>
-                Let's take a look at one common question - what's the difference between <em>display: inline</em> and
-                <em>display: inline-block</em>? Both specify how elements should fit in relation to the surrounding
-                content - but which one should you use, and when?
+                These things all impact the way we carry ourselves, the decisions we make, and the way we treat others.
+                Even though each of us is on our own journey we seldom travel it alone, and to reach our full potential
+                we must stay true to our values, be compassionate to others, and constantly evaluate ourselves to ensure
+                we're remaining on the right path. This is especially true in the realms of learning and programming
+                where teamwork is often necessary in accomplishing tasks.
             </p>
+            <h3>What surprised me the most about the core learning</h3>
             <p>
-                In order to answer this question, we should take a step back and make sure we understand the difference
-                between <em>inline</em> and <em>block-level</em> elements. Here's a quick refresher:
+                When I started on the core learning, I was skeptical about how beneficial it would really be to my
+                development. All the reflection questions felt tiresome and I couldn't wait to get back to the technical
+                learning. But over the past five weeks I've become more comfortable with it, and through frequent
+                reflection I've learned a lot about myself and how I can put myself in a better position to succeed.
             </p>
-            <figure>
-                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
-                    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
-                </blockquote>
-                <figcaption>- <cite>MDN Web Docs</cite></figcaption>
-            </figure>
+            <h3>The most challenging aspects of the core learning</h3>
             <p>
-                An example of this would be when we use the &lt<em>strong</em>&gt tag. This fits within the flow of the
-                text and doesn't cause the text within the tag to sit by itself on a new line.
+                There were times where I looked at the reflection questions and didn't even know where to begin. All of
+                a sudden having to turn my focus inward was something I found to be quite challenging, and the critical
+                thinking involved was in stark contrast to the technical aspects of the course.
             </p>
-            <figure>
-                <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">
-                    <p>A block-level element always starts on a new line and takes up the full width available
-                        (stretches out to the left and right as far as it can).</p>
-                </blockquote>
-                <figcaption>- <cite>MDN Web Docs</cite></figcaption>
-            </figure>
+            <h3>Why I think EDA, a programming school, is spending so much time focusing on core learning in a web
+                development bootcamp course</h3>
             <p>
-                One example of a block-level element is the &lt<em>p</em>&gt tag. This causes the text within the tags
-                to begin on a new line. Whatever follows the paragraph will also begin on its own new line.
+                My understanding is that EDA is training students so that they're immediately employable on graduating.
+                Employers are looking for people with not only technical skills, but also the soft-skills to fit their
+                company culture and thrive in a collaborative environment. Hence why there is so much time spent
+                focusing on these skills.
             </p>
+            <h3>Does the time I spent studying core learning feel like a waste of time? Should I have just used that
+                time to practise programming instead?</h3>
             <p>
-                Generally speaking, block-level elements may contain inline elements and other block-level elements,
-                however inline elements can't contain block-level elements.
+                In my opinion there was a good balance between core learning and programming, and everything I've
+                learned feels valuable in some way. EDA has a solid reputation and strong industry ties, so if the
+                curriculum calls for a large focus on core skills then there's obviously good reason for it. As someone
+                new to the industry I feel comfortable putting my trust in the experts, and I welcome their guidance
+                as to which areas of learning and development will be the most beneficial.
             </p>
-            <p>
-                Now that we've covered the difference between inline and block, lets look at the difference between
-                inline and inline-block. The names give us our first clue.
-            </p>
-            <p>
-                <em>Display: inline</em> is essentially what we covered earlier in the article. Content will stay on the
-                same line if possible, only wrapping onto a new line if there's not enough space. We can specify margins
-                and padding for these elements, however only the left and right values will be respected - margins and
-                padding on the top and bottom will overlap with other content. Here's an example:
-            </p>
-            <div class="example-images">
-                <img src="../images/inline-css.png"
-                    alt="Screenshot showing CSS code - span elements are being styled with display: inline"
-                    width="400px" height="auto">
-                <img src="../images/inline-example.png"
-                    alt="How two span elements with display: inline look on the page" width="400px" height="auto">
-            </div>
-            <p>
-                <em>Display: inline-block</em>, as the name suggests, finds a happy medium between the inline and
-                block-level characteristics. In some way it gives us the best of both worlds. Inline-block allows us to
-                specify the height and width of elements, which we can't do with inline. Margins and padding on the
-                top and bottom of elements are also respected, unlike what we see with the inline value. The key
-                difference between block and inline-block is that the latter doesn't cause the element to appear on a
-                new line. Inline-block elements can sit beside one another as friends and equals. Here's an example of
-                inline-block in action:
-            </p>
-            <div class="example-images">
-                <img src="../images/inline-block-css.png"
-                    alt="Screenshot showing CSS code - a span element is being styled with display: inline-block"
-                    width="400px" height="auto">
-                <img src="../images/inline-block-example.png"
-                    alt="How two span elements with display: inline-block look on the page" width="400px" height="auto">
-            </div> -->
         </div>
     </main>
     <footer>
