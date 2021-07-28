@@ -86,7 +86,7 @@ figure {
     background-color: rgba(178, 145, 0, 0.4);
 }
 
-figure figcaption{
+figure figcaption {
     text-indent: 2em;
     font-size: 0.8em;
 }
@@ -98,6 +98,18 @@ figure figcaption{
     box-shadow: 0 0 4px #7EA8BE;
     margin-left: 1em;
     padding: 22px 16px;
+}
+
+.blog-subsection {
+    margin-bottom: 1.6em;
+}
+
+#foundations-learning-plan {
+    border-bottom: 2px solid #28536B;
+}
+
+#bootcamp-learning-plan {
+    margin-top: 2em;
 }
 
 .box-heading {
