@@ -101,14 +101,15 @@ figure figcaption {
 }
 
 .blog-subsection {
+    padding-bottom: 1.6em;
     margin-bottom: 1.6em;
 }
 
-#foundations-learning-plan {
+#bootcamp-learning-plan {
     border-bottom: 2px solid #28536B;
 }
 
-#bootcamp-learning-plan {
+#foundations-learning-plan {
     margin-top: 2em;
 }
 
