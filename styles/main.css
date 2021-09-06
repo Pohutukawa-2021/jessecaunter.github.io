@@ -92,7 +92,7 @@ figure figcaption {
 }
 
 #blog-box {
-    width: 32%;
+    width: 50%;
     border: 1px solid #7EA8BE;
     border-radius: 4px;
     box-shadow: 0 0 4px #7EA8BE;
@@ -192,3 +192,23 @@ footer a:focus {
     background-color: #F6F0ED;
     border-radius: 4px;
 }
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+img { max-width: 100%; }
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} }
+
+html { font-size:100%; } 
